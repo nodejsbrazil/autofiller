@@ -1,11 +1,4 @@
-const { runtime, storage } = chrome
-runtime.onInstalled.addListener(onInstalled)
-
-function onInstalled () {
-  getSync(['fields', 'fieldsets']).then(results => {
-    if (!results.fields || !results.fieldsets) return chrome.runtime.openOptionsPage()
-  })
-}
+const { storage, runtime } = chrome
 
 function getSync (keys) {
   return new Promise((resolve, reject) => {

@@ -7,9 +7,6 @@
     "persistent": false
   },
   "permissions": ["storage"],
-  "options_ui": {
-    "page": "layouts/options.html",
-    "chrome_style": false
-  },
+  "options_page": "layouts/options/options.html",
   "manifest_version": 2
 }
