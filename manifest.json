@@ -1,0 +1,15 @@
+{
+  "name": "Form Autofiller",
+  "version": "1.0",
+  "description": "Autofills forms based on registered information",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["storage"],
+  "options_ui": {
+    "page": "layouts/options.html",
+    "chrome_style": false
+  },
+  "manifest_version": 2
+}
